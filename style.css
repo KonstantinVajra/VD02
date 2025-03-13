@@ -1,0 +1,74 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30vh; /* Опускаем карточки на 30% от верха */
+}
+
+.card {
+    background-color: #d2a679;
+    border-radius: 40px;
+    padding: 30px;
+    width: 450px;
+    height: 650px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект наведения */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #4d2600;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #663300;
+    max-width: 350px;
+    padding: 10px;
+}
+
+.description p {
+    margin: 5px 0;
+}
+
+.info {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #331a00;
+    padding: 10px;
+}
+
+.info p {
+    margin: 3px 0;
+}
